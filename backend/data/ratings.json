@@ -1,0 +1,170 @@
+{
+  "art": [
+    {
+      "id": 0,
+      "hearts": 5
+    },
+    {
+      "id": 1,
+      "hearts": 5
+    },
+    {
+      "id": 2,
+      "hearts": 0
+    },
+    {
+      "id": 3,
+      "hearts": 0
+    },
+    {
+      "id": 4,
+      "hearts": 0
+    },
+    {
+      "id": 5,
+      "hearts": 0
+    },
+    {
+      "id": 6,
+      "hearts": 0
+    },
+    {
+      "id": 7,
+      "hearts": 0
+    },
+    {
+      "id": 8,
+      "hearts": 0
+    },
+    {
+      "id": 9,
+      "hearts": 0
+    }
+  ],
+  "sculptures": [
+    {
+      "id": 0,
+      "hearts": 0
+    },
+    {
+      "id": 1,
+      "hearts": 0
+    },
+    {
+      "id": 2,
+      "hearts": 0
+    },
+    {
+      "id": 3,
+      "hearts": 0
+    },
+    {
+      "id": 4,
+      "hearts": 0
+    },
+    {
+      "id": 5,
+      "hearts": 0
+    },
+    {
+      "id": 6,
+      "hearts": 0
+    },
+    {
+      "id": 7,
+      "hearts": 0
+    },
+    {
+      "id": 8,
+      "hearts": 0
+    },
+    {
+      "id": 9,
+      "hearts": 0
+    }
+  ],
+  "jewelry": [
+    {
+      "id": 0,
+      "hearts": 0
+    },
+    {
+      "id": 1,
+      "hearts": 0
+    },
+    {
+      "id": 2,
+      "hearts": 0
+    },
+    {
+      "id": 3,
+      "hearts": 0
+    },
+    {
+      "id": 4,
+      "hearts": 0
+    },
+    {
+      "id": 5,
+      "hearts": 0
+    },
+    {
+      "id": 6,
+      "hearts": 0
+    },
+    {
+      "id": 7,
+      "hearts": 0
+    },
+    {
+      "id": 8,
+      "hearts": 0
+    },
+    {
+      "id": 9,
+      "hearts": 0
+    }
+  ],
+  "plants": [
+    {
+      "id": 0,
+      "hearts": 5
+    },
+    {
+      "id": 1,
+      "hearts": 5
+    },
+    {
+      "id": 2,
+      "hearts": 0
+    },
+    {
+      "id": 3,
+      "hearts": 0
+    },
+    {
+      "id": 4,
+      "hearts": 0
+    },
+    {
+      "id": 5,
+      "hearts": 0
+    },
+    {
+      "id": 6,
+      "hearts": 0
+    },
+    {
+      "id": 7,
+      "hearts": 0
+    },
+    {
+      "id": 8,
+      "hearts": 0
+    },
+    {
+      "id": 9,
+      "hearts": 0
+    }
+  ]
+}
