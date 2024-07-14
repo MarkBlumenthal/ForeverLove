@@ -1,0 +1,33 @@
+/* frontend/src/components/Footer.css */
+.footer {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Waltograph', sans-serif;
+  color: rgb(252, 47, 81);
+ margin-top: 50px;
+  bottom: 0;
+  left: 0;
+  margin-right: 120px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 3.5rem;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: rgb(33, 37, 41);
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: rgb(250, 140, 158);
+}
+
+  

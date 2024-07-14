@@ -2,6 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css'; // Ensure the CSS file is imported
+import Footer from './Footer'; // Import the Footer component
 
 const Home = () => {
   return (
@@ -94,9 +95,9 @@ const Home = () => {
           </form>
         </div>
       </div>
+      <Footer /> {/* Include the Footer component */}
     </div>
   );
 };
 
 export default Home;
-
