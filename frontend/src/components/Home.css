@@ -20,7 +20,7 @@
   color: rgb(250, 140, 158);
   font-size: 7rem; /* Adjust the font size as needed */
   text-align: center;
-  margin-top: 350px; /* Adjust the margin as needed */
+  margin-top: 420px; /* Adjust the margin as needed */
   margin-right: 150px;
 }
 
@@ -54,6 +54,7 @@
   color: white;
   padding: 10px 20px;
   margin: 5px;
+  margin: 35px;
   text-decoration: none;
   border-radius: 50px; /* Make buttons more rounded */
   font-size: 1.2rem;
