@@ -5,11 +5,16 @@ import './Home.css'; // Ensure the CSS file is imported
 const Home = () => {
   return (
     <div className="home">
-      <h1>Welcome to Forever-Love</h1>
-      <p>Explore and rate the amazing artworks, sculptures, jewelry, and plants.</p>
+      <div className="header-container">
+        <h1>Aviv Blumenthal</h1>
+      </div>
+      <div className="description-container">
+        <p>Step into my world</p>
+      </div>
     </div>
   );
 };
 
 export default Home;
+
 

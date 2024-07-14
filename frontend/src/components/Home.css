@@ -1,11 +1,43 @@
 /* frontend/src/components/Home.css */
 .home {
-    padding: 20px;
-  }
-  
-  .home h1 {
-    font-family: 'Waltograph', sans-serif;
-  }
-  
-  
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh; /* Make the home section full height */
+  justify-content: center; /* Center content vertically */
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container h1 {
+  font-family: 'Waltograph', sans-serif;
+  color: rgb(250, 140, 158);
+  font-size: 7rem; /* Adjust the font size as needed */
+  text-align: center;
+  margin-top: -490px; /* Adjust the margin as needed */
+  margin-right: 150px;
+}
+
+.description-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.description-container p {
+  font-family: 'Waltograph', sans-serif;
+  color: rgb(250, 140, 158);
+  font-size: 5.2rem; /* Adjust the font size as needed */
+  text-align: center;
+  margin-top: -220px; /* Adjust the margin as needed */
+  margin-left: 270px;
+}
+
   
