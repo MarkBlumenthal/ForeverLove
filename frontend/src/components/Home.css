@@ -79,7 +79,7 @@
   height: auto; /* Maintain aspect ratio */
   border-radius: 150px; /* Optional: Add rounded corners to the image */
   margin-right: 20px; /* Add some space between the image and the text */
-  margin-top: 190px;
+  margin-top: 230px;
 }
 
 .about-me {
@@ -149,7 +149,7 @@
   color: rgb(33, 37, 41);
   font-size: 1.0rem; /* Adjust the font size as needed */
   line-height: 1.5;
-  margin-top: 210px;
+  margin-top: 180px;
   margin-left: 150px;
 }
 
@@ -162,12 +162,18 @@
   width: 100%;
 }
 
-.contact-form h2 {
+.contact-heading {
+  width: 100%; /* Ensure the heading container takes the full width */
+  text-align: center; /* Center the heading text */
+  margin-bottom: 5px; /* Add some space below the heading */
+  margin-right: 580px;
+}
+
+.contact-heading h2 {
   font-family: 'Waltograph', sans-serif;
   color: rgb(250, 140, 158);
   font-size: 3.5rem; /* Adjust the font size as needed */
-  text-align: center; /* Center the heading */
-  margin-right: 150px;
+  margin-bottom: 5px;
 }
 
 .contact-form form {
@@ -213,5 +219,7 @@ button[type="submit"] {
 button[type="submit"]:hover {
   box-shadow: 0 0 5px rgb(248, 7, 140);
 }
+
+
 
 

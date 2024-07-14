@@ -67,14 +67,16 @@ const Home = () => {
       <div className="contact-container">
         <div className="contact-paragraph">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br> Nulla convallis egestas rhoncus.
-            Donec facilisis fermentum<br></br> sem, ac viverra ante luctus vel. Donec vel mauris quam.<br></br>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br></br> Nulla convallis egestas rhoncus.
-            Donec facilisis fermentum<br></br> sem, ac viverra ante luctus vel. Donec vel mauris quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.
+            Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus.
+            Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.
           </p>
         </div>
         <div className="contact-form">
-          <h2>Contact Me</h2>
+          <div className="contact-heading">
+            <h2>Contact Me</h2>
+          </div>
           <form action="https://formspree.io/f/your_form_id" method="POST">
             <div className="form-group">
               <label htmlFor="name">Name</label>
@@ -97,3 +99,4 @@ const Home = () => {
 };
 
 export default Home;
+
