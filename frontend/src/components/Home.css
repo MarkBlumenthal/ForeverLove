@@ -20,7 +20,7 @@
   color: rgb(250, 140, 158);
   font-size: 7rem; /* Adjust the font size as needed */
   text-align: center;
-  margin-top: 920px; /* Adjust the margin as needed */
+  margin-top: 1115px; /* Adjust the margin as needed */
   margin-right: 150px;
 }
 
@@ -102,11 +102,25 @@
   line-height: 1.5;
 }
 
+.gallery-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px; /* Adjust as needed */
+}
+
+.gallery-heading h2 {
+  font-family: 'Waltograph', sans-serif;
+  color: rgb(250, 140, 158);
+  font-size: 3.5rem; /* Adjust the font size as needed */
+  text-align: center; /* Center the heading */
+}
+
 .gallery {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 20px; /* Adjust as needed */
 }
 
 .gallery-image {
