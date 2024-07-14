@@ -20,7 +20,7 @@
   color: rgb(250, 140, 158);
   font-size: 7rem; /* Adjust the font size as needed */
   text-align: center;
-  margin-top: 420px; /* Adjust the margin as needed */
+  margin-top: 920px; /* Adjust the margin as needed */
   margin-right: 150px;
 }
 
@@ -53,8 +53,7 @@
   background-color: rgb(250, 140, 158);
   color: white;
   padding: 10px 20px;
-  margin: 5px;
-  margin: 35px;
+  margin: 35px; /* Increase the margin to create more spacing */
   text-decoration: none;
   border-radius: 50px; /* Make buttons more rounded */
   font-size: 1.2rem;
@@ -102,6 +101,22 @@
   font-size: 1.0rem; /* Adjust the font size as needed */
   line-height: 1.5;
 }
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.gallery-image {
+  width: 200px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin: 20px; /* Add space between the images */
+  border-radius: 10px; /* Optional: Add rounded corners to the images */
+  box-shadow: 0 0 50px rgb(248, 7, 140);
+}
+
 
 
 
