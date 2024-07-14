@@ -20,7 +20,7 @@
   color: rgb(250, 140, 158);
   font-size: 7rem; /* Adjust the font size as needed */
   text-align: center;
-  margin-top: -490px; /* Adjust the margin as needed */
+  margin-top: -200px; /* Adjust the margin as needed */
   margin-right: 150px;
 }
 
@@ -34,10 +34,37 @@
 .description-container p {
   font-family: 'Waltograph', sans-serif;
   color: rgb(250, 140, 158);
-  font-size: 5.2rem; /* Adjust the font size as needed */
+  font-size: 4.5rem; /* Adjust the font size as needed */
   text-align: center;
-  margin-top: -220px; /* Adjust the margin as needed */
+  margin-top: -130px; /* Adjust the margin as needed */
   margin-left: 270px;
 }
 
-  
+.nav-buttons {
+  display: flex;
+  flex-direction: row; /* Align buttons next to each other */
+  align-items: center;
+  justify-content: center;
+  margin-top: -40px;
+}
+
+.nav-link {
+  display: inline-block;
+  background-color: rgb(250, 140, 158);
+  color: white;
+  padding: 10px 20px;
+  margin: 5px;
+  text-decoration: none;
+  border-radius: 50px; /* Make buttons more rounded */
+  font-size: 1.2rem;
+  text-align: center;
+  box-shadow: 0 0 50px rgb(248, 7, 140); /* Add pink glow */
+  transition: box-shadow 0.9s ease; /* Smooth transition for glow effect */
+}
+
+.nav-link:hover {
+  background-color: rgb(240, 100, 120);
+  box-shadow: 0 0 20px rgba(250, 140, 158, 0.7); /* Enhance glow on hover */
+}
+
+
