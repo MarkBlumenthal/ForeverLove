@@ -35,7 +35,7 @@
   color: rgb(250, 140, 158);
   font-size: 4.5rem; /* Adjust the font size as needed */
   text-align: center;
-  margin-top: -130px; /* Adjust the margin as needed */
+  margin-top: -110px; /* Adjust the margin as needed */
   margin-left: 270px;
 }
 
@@ -223,3 +223,100 @@ button[type="submit"]:hover {
 
 
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .header-container h1 {
+    font-size: 5rem;
+  }
+
+  .description-container p {
+    font-size: 3.5rem;
+  }
+
+  .about-me h2 {
+    font-size: 2.5rem;
+  }
+
+  .contact-heading h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .header-container h1 {
+    font-size: 4rem;
+  }
+
+  .description-container p {
+    font-size: 3rem;
+  }
+
+  .artist-image {
+    width: 200px;
+  }
+
+  .about-me h2 {
+    font-size: 2rem;
+  }
+
+  .gallery-image {
+    width: 150px;
+  }
+
+  .contact-heading h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container h1 {
+    font-size: 3rem;
+  }
+
+  .description-container p {
+    font-size: 2.5rem;
+  }
+
+  .about-me h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery-image {
+    width: 100px;
+  }
+
+  .contact-heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .contact-paragraph p {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .header-container h1 {
+    font-size: 2.5rem;
+  }
+
+  .description-container p {
+    font-size: 2rem;
+  }
+
+  .about-me h2 {
+    font-size: 1.5rem;
+  }
+
+  .gallery-image {
+    width: 80px;
+  }
+
+  .contact-heading h2 {
+    font-size: 1.5rem;
+  }
+
+  .contact-paragraph p {
+    font-size: 0.8rem;
+  }
+}
