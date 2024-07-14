@@ -1,0 +1,42 @@
+/* frontend/src/components/MyArt.css */
+.my-art {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .my-art-heading {
+    font-family: 'Waltograph', sans-serif;
+    color: rgb(250, 140, 158);
+    font-size: 7rem; /* Adjust the font size as needed */
+    text-align: center;
+    margin-top: 145px; /* Adjust the margin as needed */
+  }
+  
+  .nav-buttons {
+    display: flex;
+    flex-direction: row; /* Align buttons next to each other */
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    background-color: rgb(250, 140, 158);
+    color: white;
+    padding: 10px 20px;
+    margin: 35px; /* Increase the margin to create more spacing */
+    text-decoration: none;
+    border-radius: 50px; /* Make buttons more rounded */
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 0 50px rgb(248, 7, 140); /* Add pink glow */
+    transition: box-shadow 0.9s ease; /* Smooth transition for glow effect */
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(240, 100, 120);
+    box-shadow: 0 0 20px rgba(250, 140, 158, 0.7); /* Enhance glow on hover */
+  }
+  
+  
