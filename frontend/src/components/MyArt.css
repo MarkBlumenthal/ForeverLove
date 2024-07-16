@@ -63,4 +63,11 @@
 
 
   
-  
+.item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Ensures the image covers the box */
+  border-radius: 10px; /* Optional: Add rounded corners to the images */
+  box-shadow: none; /* Remove box shadow */
+  border: none; /* Remove any border */
+}
