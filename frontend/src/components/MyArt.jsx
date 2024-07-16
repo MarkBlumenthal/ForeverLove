@@ -25,12 +25,13 @@ const MyArt = () => {
           Plants
         </Link>
       </div>
-      {Array.from({ length: 10 }, (_, i) => (
-        <Item key={i} category="art" id={i} />
-      ))}
+      <div className="items-container">
+        {Array.from({ length: 10 }, (_, i) => (
+          <Item key={i} category="art" id={i} />
+        ))}
+      </div>
     </div>
   );
 };
 
 export default MyArt;
-

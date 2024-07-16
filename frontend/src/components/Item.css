@@ -1,0 +1,78 @@
+/* frontend/src/components/Item.css */
+.item-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add some space between items */
+  }
+  
+  .item {
+    width: 45%;
+    position: relative;
+  }
+  
+  .item img {
+    width: 45%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the box */
+    border-radius: 10px; /* Optional: Add rounded corners to the images */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rating-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px; /* Add some space between the image and the ratings */
+  }
+  
+  .rating-container p {
+    margin: 0;
+    font-size: 1.2rem;
+    color: rgb(250, 140, 158);
+  }
+  
+  .rating-container button {
+    background-color: rgb(250, 140, 158);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .rating-container button:hover {
+    background-color: rgb(240, 100, 120);
+  }
+  
+  .description-toggle {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .description-toggle button {
+    background-color: rgb(250, 140, 158);
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .description-toggle button:hover {
+    background-color: rgb(240, 100, 120);
+  }
+  
+  .description {
+    margin-top: 10px;
+    background-color: rgba(250, 140, 158, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  
+  

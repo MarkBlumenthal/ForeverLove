@@ -35,24 +35,24 @@ const Home = () => {
         <div className="about-me">
           <h2>About Me</h2>
           <p>
-            This is the about me section where the artist can write something about themselves.<br></br>
+            This is the about me section where the artist can write something about themselves.
             It can be a few sentences or a longer paragraph, detailing their background,
-            their art,<br></br> and anything else they would like to share with visitors.
+            their art, and anything else they would like to share with visitors.
           </p>
           <p>
-            This is the about me section where the artist can write something about themselves.<br></br>
+            This is the about me section where the artist can write something about themselves.
             It can be a few sentences or a longer paragraph, detailing their background,
-            their art,<br></br> and anything else they would like to share with visitors.
+            their art, and anything else they would like to share with visitors.
           </p>
           <p>
-            This is the about me section where the artist can write something about themselves.<br></br>
+            This is the about me section where the artist can write something about themselves.
             It can be a few sentences or a longer paragraph, detailing their background,
-            their art,<br></br> and anything else they would like to share with visitors.
+            their art, and anything else they would like to share with visitors.
           </p>
           <p>
-            This is the about me section where the artist can write something about themselves.<br></br>
+            This is the about me section where the artist can write something about themselves.
             It can be a few sentences or a longer paragraph, detailing their background,
-            their art,<br></br> and anything else they would like to share with visitors.
+            their art, and anything else they would like to share with visitors.
           </p>
         </div>
       </div>

@@ -1,7 +1,4 @@
 /* frontend/src/components/Home.css */
-
-
-
 .home {
   padding: 20px;
   display: flex;
@@ -38,7 +35,7 @@
   color: rgb(250, 140, 158);
   font-size: 4.5rem; /* Adjust the font size as needed */
   text-align: center;
-  margin-top: -110px; /* Adjust the margin as needed */
+  margin-top: -10px; /* Adjust the margin as needed */
   margin-left: 270px;
 }
 
@@ -47,7 +44,7 @@
   flex-direction: row; /* Align buttons next to each other */
   align-items: center;
   justify-content: center;
-  margin-top: -40px;
+  margin-top: -10px;
 }
 
 .nav-link {
@@ -67,6 +64,7 @@
 .nav-link:hover {
   background-color: rgb(240, 100, 120);
   box-shadow: 0 0 20px rgba(250, 140, 158, 0.7); /* Enhance glow on hover */
+  color: white !important;
 }
 
 .about-section {
@@ -82,7 +80,7 @@
   height: auto; /* Maintain aspect ratio */
   border-radius: 150px; /* Optional: Add rounded corners to the image */
   margin-right: 20px; /* Add some space between the image and the text */
-  margin-top: 230px;
+  margin-top: 180px;
 }
 
 .about-me {
@@ -94,12 +92,12 @@
   color: rgb(250, 140, 158);
   font-size: 3.5rem; /* Adjust the font size as needed */
   margin-left: 250px;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 
 .about-me p {
   font-family: 'Arial', sans-serif;
-  color: rgb(33, 37, 41);
+  color: black;
   font-size: 1.0rem; /* Adjust the font size as needed */
   line-height: 1.5;
 }
@@ -108,7 +106,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px; /* Adjust as needed */
+  margin-top: 180px; /* Adjust as needed */
 }
 
 .gallery-heading h2 {
@@ -122,7 +120,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Adjust as needed */
+  margin-top: 50px; /* Adjust as needed */
 }
 
 .gallery-image {
@@ -138,7 +136,7 @@
   flex-direction: row; /* Align paragraph and form next to each other */
   align-items: flex-start;
   justify-content: center;
-  margin-top: 50px; /* Adjust as needed */
+  margin-top: 200px; /* Adjust as needed */
   width: 80%; /* Adjust the width as needed */
 }
 
@@ -149,10 +147,10 @@
 
 .contact-paragraph p {
   font-family: 'Arial', sans-serif;
-  color: rgb(33, 37, 41);
+  color: black;
   font-size: 1.0rem; /* Adjust the font size as needed */
   line-height: 1.5;
-  margin-top: 180px;
+  margin-top: 115px;
   margin-left: 150px;
 }
 
@@ -169,7 +167,7 @@
   width: 100%; /* Ensure the heading container takes the full width */
   text-align: center; /* Center the heading text */
   margin-bottom: 5px; /* Add some space below the heading */
-  margin-right: 580px;
+  margin-right: 480px;
 }
 
 .contact-heading h2 {
