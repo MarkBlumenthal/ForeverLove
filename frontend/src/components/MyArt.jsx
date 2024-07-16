@@ -3,6 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Item from './Item';
 import './MyArt.css'; // Ensure the CSS file is imported
+import Footer from './Footer';
 
 const MyArt = () => {
   return (
@@ -26,10 +27,11 @@ const MyArt = () => {
         </Link>
       </div>
       <div className="items-container">
-        {Array.from({ length: 10 }, (_, i) => (
+        {Array.from({ length: 6 }, (_, i) => (
           <Item key={i} category="art" id={i} />
         ))}
       </div>
+      <Footer /> {/* Include the Footer component */}
     </div>
   );
 };
