@@ -17,7 +17,7 @@
     flex-direction: row; /* Align buttons next to each other */
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 80px;
   }
   
   .nav-link {
