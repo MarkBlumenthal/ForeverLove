@@ -9,9 +9,9 @@ import axios from 'axios';
 const Item = ({ category, id }) => {
   const [hearts, setHearts] = useState(0);
   const [showDescription, setShowDescription] = useState(false);
+  const [isBouncing, setIsBouncing] = useState(false);
 
   useEffect(() => {
-    // Fetch the current rating from the backend
     axios.get(`http://localhost:3001/ratings/${category}`)
       .then(response => {
         const itemRating = response.data.find(item => item.id === id);
@@ -23,6 +23,9 @@ const Item = ({ category, id }) => {
   }, [category, id]);
 
   const handleRate = () => {
+    setIsBouncing(true);
+    setTimeout(() => setIsBouncing(false), 500); // Reset the bouncing effect after the animation duration
+
     axios.post(`http://localhost:3001/rate/${category}/${id}`)
       .then(response => {
         if (response.data.success) {
@@ -52,10 +55,13 @@ const Item = ({ category, id }) => {
         <ItemCarousel images={images} />
       </div>
       <div className="rating-container">
-        <p>
-          {hearts} <FontAwesomeIcon icon={faHeart} />
+        <p onClick={handleRate} style={{ cursor: 'pointer', color: 'black' }}>
+          {hearts} <FontAwesomeIcon 
+            icon={faHeart} 
+            style={{ color: 'red' }} 
+            className={isBouncing ? 'bounce' : ''} 
+          />
         </p>
-        <button onClick={handleRate}>Rate</button>
       </div>
       <div className="description-toggle">
         <button onClick={toggleDescription}>
@@ -72,3 +78,12 @@ const Item = ({ category, id }) => {
 };
 
 export default Item;
+
+
+
+
+
+
+
+
+

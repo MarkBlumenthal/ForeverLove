@@ -6,7 +6,7 @@ const MyPlants = () => {
   return (
     <div className="my-plants">
       <h2>My Plants</h2>
-      {Array.from({ length: 10 }, (_, i) => (
+      {Array.from({ length: 6 }, (_, i) => (
         <Item key={i} category="plants" id={i} />
       ))}
     </div>
