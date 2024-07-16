@@ -52,8 +52,15 @@
   box-sizing: border-box;
   position: relative; /* Make positioning relative for overlapping */
   z-index: 1; /* Ensure stacking order */
-  margin: 50px -100px; /* Apply negative margins to overlap items */
+  margin: 50px -100px; /* Reduce vertical margins to decrease space between rows */
 }
+
+.item-container:first-child,
+.item-container:nth-child(2),
+.item-container:nth-child(3) {
+  margin-top: 170px; /* Maintain larger top margin for the first row */
+}
+
 
   
   
