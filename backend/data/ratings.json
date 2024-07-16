@@ -6,11 +6,11 @@
     },
     {
       "id": 1,
-      "hearts": 5
+      "hearts": 7
     },
     {
       "id": 2,
-      "hearts": 0
+      "hearts": 2
     },
     {
       "id": 3,
@@ -44,7 +44,7 @@
   "sculptures": [
     {
       "id": 0,
-      "hearts": 0
+      "hearts": 2
     },
     {
       "id": 1,
@@ -86,7 +86,7 @@
   "jewelry": [
     {
       "id": 0,
-      "hearts": 0
+      "hearts": 2
     },
     {
       "id": 1,

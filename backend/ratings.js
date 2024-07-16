@@ -6,39 +6,27 @@ const filePath = path.join(__dirname, 'data', 'ratings.json');
 
 let ratings = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
 
-// Initialize ratings if not already initialized
-const initializeRatings = () => {
-  if (ratings.art.length === 0) {
-    for (let i = 0; i < 10; i++) {
-      ratings.art.push({ id: i, hearts: 0 });
-      ratings.sculptures.push({ id: i, hearts: 0 });
-      ratings.jewelry.push({ id: i, hearts: 0 });
-      ratings.plants.push({ id: i, hearts: 0 });
-    }
-    saveRatings();
-  }
-};
-
+// Save ratings to file
 const saveRatings = () => {
   fs.writeFileSync(filePath, JSON.stringify(ratings, null, 2));
 };
 
-initializeRatings();
-
+// Get ratings for a category
 const getRatings = (category) => {
   return ratings[category] || null;
 };
 
+// Add a heart to an item in a category
 const addRating = (category, id) => {
-  const item = ratings[category]?.find((item) => item.id === id);
-  if (item) {
-    item.hearts += 1;
+  if (ratings[category] && ratings[category][id]) {
+    ratings[category][id].hearts += 1;
     saveRatings();
-    return item.hearts;
+    return ratings[category][id].hearts;
   }
   return null;
 };
 
 module.exports = { getRatings, addRating };
+
 
   

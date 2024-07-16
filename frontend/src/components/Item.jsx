@@ -4,13 +4,32 @@ import ItemCarousel from './ItemCarousel';
 import './Item.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faChevronDown } from '@fortawesome/free-solid-svg-icons';
+import axios from 'axios';
 
 const Item = ({ category, id }) => {
   const [hearts, setHearts] = useState(0);
   const [showDescription, setShowDescription] = useState(false);
 
+  useEffect(() => {
+    // Fetch the current rating from the backend
+    axios.get(`http://localhost:3001/ratings/${category}`)
+      .then(response => {
+        const itemRating = response.data.find(item => item.id === id);
+        if (itemRating) {
+          setHearts(itemRating.hearts);
+        }
+      })
+      .catch(error => console.error('Error fetching ratings:', error));
+  }, [category, id]);
+
   const handleRate = () => {
-    setHearts(hearts + 1);
+    axios.post(`http://localhost:3001/rate/${category}/${id}`)
+      .then(response => {
+        if (response.data.success) {
+          setHearts(response.data.hearts);
+        }
+      })
+      .catch(error => console.error('Error updating rating:', error));
   };
 
   const toggleDescription = () => {
@@ -53,8 +72,3 @@ const Item = ({ category, id }) => {
 };
 
 export default Item;
-
-
-
-
-
