@@ -1,0 +1,73 @@
+/* frontend/src/components/MyJewelry.css */
+.my-jewelry {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .my-jewelry-heading {
+    font-family: 'Waltograph', sans-serif;
+    color: rgb(250, 140, 158);
+    font-size: 7rem; /* Adjust the font size as needed */
+    text-align: center;
+    margin-top: 145px; /* Adjust the margin as needed */
+  }
+  
+  .nav-buttons {
+    display: flex;
+    flex-direction: row; /* Align buttons next to each other */
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+  }
+  
+  .nav-link {
+    display: inline-block;
+    background-color: rgb(250, 140, 158);
+    color: white;
+    padding: 10px 20px;
+    margin: 35px; /* Increase the margin to create more spacing */
+    text-decoration: none;
+    border-radius: 50px; /* Make buttons more rounded */
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 0 50px rgb(248, 7, 140); /* Add pink glow */
+    transition: box-shadow 0.9s ease; /* Smooth transition for glow effect */
+  }
+  
+  .nav-link:hover {
+    background-color: rgb(240, 100, 120);
+    box-shadow: 0 0 20px rgba(250, 140, 158, 0.7); /* Enhance glow on hover */
+  }
+  
+  .items-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping to the next line if items don't fit */
+    justify-content: center;
+    margin-left: -30px; /* Adjust negative margin as needed to fit items */
+    margin-right: -30px; /* Adjust negative margin as needed to fit items */
+  }
+  
+  .item-container {
+    width: 45%; /* Adjust width as needed */
+    box-sizing: border-box;
+    position: relative; /* Make positioning relative for overlapping */
+    z-index: 1; /* Ensure stacking order */
+    margin: 50px -100px; /* Reduce vertical margins to decrease space between rows */
+  }
+  
+  .item-container:first-child,
+  .item-container:nth-child(2),
+  .item-container:nth-child(3) {
+    margin-top: 170px; /* Maintain larger top margin for the first row */
+  }
+  
+  
+    
+  .item img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the box */
+    border-radius: 10px; /* Optional: Add rounded corners to the images */
+    box-shadow: none; /* Remove box shadow */
+    border: none; /* Remove any border */
+  }

@@ -2,19 +2,19 @@
   "art": [
     {
       "id": 0,
-      "hearts": 18
+      "hearts": 40
     },
     {
       "id": 1,
-      "hearts": 16
+      "hearts": 22
     },
     {
       "id": 2,
-      "hearts": 5
+      "hearts": 6
     },
     {
       "id": 3,
-      "hearts": 0
+      "hearts": 2
     },
     {
       "id": 4,
@@ -44,11 +44,11 @@
   "sculptures": [
     {
       "id": 0,
-      "hearts": 2
+      "hearts": 3
     },
     {
       "id": 1,
-      "hearts": 0
+      "hearts": 5
     },
     {
       "id": 2,
