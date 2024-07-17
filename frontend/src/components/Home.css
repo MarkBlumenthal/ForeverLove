@@ -298,6 +298,7 @@ button[type="submit"]:hover {
     text-align: center; /* Ensure the text is centered */
     margin-top: 20px;
     margin-left: 0;
+    font-size: 0.9rem;
   }
 
   .gallery-heading {
@@ -328,7 +329,7 @@ button[type="submit"]:hover {
   }
 
   .contact-paragraph p {
-    font-size: 1rem; /* Match the font size with about me */
+    font-size: 0.9rem; /* Match the font size with about me */
     margin-top: 20px;
     margin-left: 0;
     line-height: 1.5;
