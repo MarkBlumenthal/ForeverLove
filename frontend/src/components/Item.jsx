@@ -5,14 +5,14 @@ import './Item.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
-import ImageModal from './Modal'; // Import the Modal component
+import ImageModal from './Modal';
 
-const Item = ({ category, id }) => {
+const Item = ({ category, id, description }) => {
   const [hearts, setHearts] = useState(0);
   const [showDescription, setShowDescription] = useState(false);
   const [isBouncing, setIsBouncing] = useState(false);
-  const [showModal, setShowModal] = useState(false); // State to control modal visibility
-  const [imageSrc, setImageSrc] = useState(''); // State to control the image source for the modal
+  const [showModal, setShowModal] = useState(false);
+  const [imageSrc, setImageSrc] = useState('');
 
   useEffect(() => {
     axios.get(`http://localhost:3001/ratings/${category}`)
@@ -27,7 +27,7 @@ const Item = ({ category, id }) => {
 
   const handleRate = () => {
     setIsBouncing(true);
-    setTimeout(() => setIsBouncing(false), 500); // Reset the bouncing effect after the animation duration
+    setTimeout(() => setIsBouncing(false), 500);
 
     axios.post(`http://localhost:3001/rate/${category}/${id}`)
       .then(response => {
@@ -79,7 +79,7 @@ const Item = ({ category, id }) => {
         </button>
         {showDescription && (
           <div className="description">
-            <p>This is the description for image {id}.</p>
+            <p>{description}</p>
           </div>
         )}
       </div>
@@ -89,7 +89,3 @@ const Item = ({ category, id }) => {
 };
 
 export default Item;
-
-
-
-

@@ -72,6 +72,12 @@
     margin-top: 10px;
     padding: 10px;
     border-radius: 5px;
+    word-wrap: break-word; /* Ensure long words break to the next line */
+    white-space: pre-wrap; /* Preserve whitespace and wrap text */
+    text-align: justify; /* Justify text to align evenly on both sides */
+    width: 40%; /* Ensure the description takes the full width of the container */
+    margin-left: 165px;
+    color: black;
   }
   
   
