@@ -19,7 +19,7 @@
   color: rgb(250, 140, 158);
   font-size: 7rem; /* Adjust the font size as needed */
   text-align: center;
-  margin-top: 145px; /* Adjust the margin as needed */
+  margin-top: 115px; /* Adjust the margin as needed */
   margin-right: 150px;
 }
 
@@ -44,7 +44,7 @@
   flex-direction: row; /* Align buttons next to each other */
   align-items: center;
   justify-content: center;
-  margin-top: -10px;
+  margin-top: -5px !important;
 }
 
 .nav-link {
@@ -76,11 +76,11 @@
 }
 
 .artist-image {
-  width: 300px; /* Adjust the width as needed */
+  width: 220px; /* Adjust the width as needed */
   height: auto; /* Maintain aspect ratio */
   border-radius: 150px; /* Optional: Add rounded corners to the image */
   margin-right: 20px; /* Add some space between the image and the text */
-  margin-top: 180px;
+  margin-top: 210px;
 }
 
 .about-me {
@@ -92,13 +92,13 @@
   color: rgb(250, 140, 158);
   font-size: 3.5rem; /* Adjust the font size as needed */
   margin-left: 250px;
-  margin-top: 110px;
+  margin-top: 120px;
 }
 
 .about-me p {
   font-family: 'Arial', sans-serif;
   color: black;
-  font-size: 1.0rem; /* Adjust the font size as needed */
+  font-size: 0.8rem; /* Adjust the font size as needed */
   line-height: 1.5;
 }
 
@@ -148,10 +148,11 @@
 .contact-paragraph p {
   font-family: 'Arial', sans-serif;
   color: black;
-  font-size: 1.0rem; /* Adjust the font size as needed */
+  font-size: 0.8rem; /* Adjust the font size as needed */
   line-height: 1.5;
   margin-top: 175px;
   margin-left: 150px;
+  width: 100%;
 }
 
 .contact-form {
@@ -175,14 +176,15 @@
   color: rgb(250, 140, 158);
   font-size: 3.5rem; /* Adjust the font size as needed */
   margin-bottom: 5px;
+  margin-left: 200px;
 }
 
 .contact-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60%;
-  margin-right: 150px;
+  width: 50%;
+  margin-right: 70px;
 }
 
 .form-group {
