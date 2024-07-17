@@ -224,3 +224,143 @@ button[type="submit"]:hover {
 
 
 
+
+
+
+
+/* Responsive styling for 375px screen */
+@media only screen and (max-width: 375px) {
+  .home {
+    padding: 10px;
+  }
+
+  .header-container h1 {
+    font-size: 4rem;
+    margin-top: 160px;
+    margin-right: 0;
+  }
+
+  .description-container p {
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute buttons evenly */
+    margin-top: 20px;
+    align-items: center;
+  }
+
+  .nav-link {
+    margin: 10px 5px;
+    padding: 10px;
+    font-size: 1rem;
+    width: 45%; /* Two buttons per row with margin */
+    text-align: center;
+  }
+
+  .nav-link:nth-child(5) {
+    width: 100%; /* Center the 5th button */
+    order: 1;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0; /* Add some vertical margin for spacing */
+  }
+
+  .artist-image {
+    width: 200px;
+    margin-top: 20px;
+    margin-right: 0;
+  }
+
+  .about-me h2 {
+    font-size: 2rem;
+    margin-left: 0;
+    margin-top: 60px;
+    text-align: center;
+  }
+
+  .about-me p {
+    text-align: center; /* Ensure the text is centered */
+    margin-top: 20px;
+    margin-left: 0;
+  }
+
+  .gallery-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Adjust as needed */
+  }
+
+  .gallery-image {
+    width: 250px !important; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin: 20px; /* Add space between the images */
+    border-radius: 10px; /* Optional: Add rounded corners to the images */
+    box-shadow: 0 0 50px rgb(248, 7, 140);
+  }
+
+  .contact-container {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 50px;
+  }
+
+  .contact-paragraph {
+    margin-right: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .contact-paragraph p {
+    font-size: 1rem; /* Match the font size with about me */
+    margin-top: 20px;
+    margin-left: 0;
+    line-height: 1.5;
+  }
+
+  .contact-form form {
+    width: 80%;
+    margin-right: 0;
+  }
+
+  .contact-heading {
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .contact-heading h2 {
+    font-size: 2rem;
+    margin-top: 50px;
+  }
+
+  .gallery-heading h2 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .gallery-image {
+    width: 150px;
+    margin: 10px 0;
+  }
+}
+
+
+
+
+
