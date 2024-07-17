@@ -347,6 +347,7 @@ button[type="submit"]:hover {
   .contact-heading h2 {
     font-size: 2rem;
     margin-top: 50px;
+    margin-left: -20px;
   }
 
   .gallery-heading h2 {
