@@ -30,4 +30,20 @@
   color: rgb(250, 140, 158);
 }
 
-  
+
+
+
+/* Responsive styling for 375px screen */
+@media only screen and (max-width: 375px) {
+  .footer {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Waltograph', sans-serif;
+    color: rgb(252, 47, 81);
+   margin-top: 100px;
+    bottom: 0;
+    margin-left: 120px;
+    margin-right: 120px;
+  }
+}
