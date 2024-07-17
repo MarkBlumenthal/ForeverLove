@@ -6,6 +6,15 @@ import './MySculptures.css'; // Ensure the CSS file is imported
 import Footer from './Footer';
 
 const MySculptures = () => {
+  const descriptions = [
+    "This is the description for art piece 1. It is quite long to test the word wrapping functionality. Make sure that this text wraps neatly within the container and does not overflow the width of the page. This is a test description to verify the layout and styling of the content.",
+    "This is the description for art piece 1. It is quite long to test the word wrapping functionality. Make sure that this text wraps neatly within the container and does not overflow the width of the page. This is a test description to verify the layout and styling of the content.",
+    "This is the description for art piece 1. It is quite long to test the word wrapping functionality. Make sure that this text wraps neatly within the container and does not overflow the width of the page. This is a test description to verify the layout and styling of the content.",
+    "This is the description for art piece 1. It is quite long to test the word wrapping functionality. Make sure that this text wraps neatly within the container and does not overflow the width of the page. This is a test description to verify the layout and styling of the content.",
+    "This is the description for art piece 1. It is quite long to test the word wrapping functionality. Make sure that this text wraps neatly within the container and does not overflow the width of the page. This is a test description to verify the layout and styling of the content.",
+    "This is the description for art piece 1. It is quite long to test the word wrapping functionality. Make sure that this text wraps neatly within the container and does not overflow the width of the page. This is a test description to verify the layout and styling of the content.",
+  ];
+
   return (
     <div className="my-sculptures">
       <h1 className="my-sculptures-heading">My Sculptures</h1>
@@ -28,7 +37,7 @@ const MySculptures = () => {
       </div>
       <div className="items-container">
         {Array.from({ length: 6 }, (_, i) => (
-          <Item key={i} category="sculptures" id={i} />
+          <Item key={i} category="sculptures" id={i} description={descriptions[i]} />
         ))}
       </div>
       <Footer /> {/* Include the Footer component */}
@@ -37,4 +46,3 @@ const MySculptures = () => {
 };
 
 export default MySculptures;
-
