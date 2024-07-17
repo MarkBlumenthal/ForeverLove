@@ -17,7 +17,7 @@ const MySculptures = () => {
 
   return (
     <div className="my-sculptures">
-      <h1 className="my-sculptures-heading">My Sculptures</h1>
+      <h1 className="my-sculptures-heading">Sculptures</h1>
       <div className="nav-buttons">
         <Link to="/" className="nav-link">
           Home

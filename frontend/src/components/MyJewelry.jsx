@@ -17,7 +17,7 @@ const MyJewelry = () => {
 
   return (
     <div className="my-jewelry">
-      <h1 className="my-jewelry-heading">My Jewelry</h1>
+      <h1 className="my-jewelry-heading">Jewelry</h1>
       <div className="nav-buttons">
         <Link to="/" className="nav-link">
           Home

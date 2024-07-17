@@ -17,7 +17,7 @@ const MyPlants = () => {
 
   return (
     <div className="my-plants">
-      <h1 className="my-plants-heading">My Plants</h1>
+      <h1 className="my-plants-heading">Plants</h1>
       <div className="nav-buttons">
         <Link to="/" className="nav-link">
           Home
