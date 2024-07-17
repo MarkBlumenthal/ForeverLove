@@ -5,11 +5,14 @@ import './Item.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import axios from 'axios';
+import ImageModal from './Modal'; // Import the Modal component
 
 const Item = ({ category, id }) => {
   const [hearts, setHearts] = useState(0);
   const [showDescription, setShowDescription] = useState(false);
   const [isBouncing, setIsBouncing] = useState(false);
+  const [showModal, setShowModal] = useState(false); // State to control modal visibility
+  const [imageSrc, setImageSrc] = useState(''); // State to control the image source for the modal
 
   useEffect(() => {
     axios.get(`http://localhost:3001/ratings/${category}`)
@@ -45,6 +48,13 @@ const Item = ({ category, id }) => {
     `/images/${category}/${id}_3.jpg`,
   ];
 
+  const handleImageClick = (src) => {
+    setImageSrc(src);
+    setShowModal(true);
+  };
+
+  const handleClose = () => setShowModal(false);
+
   useEffect(() => {
     console.log('Image URLs:', images);
   }, [images]);
@@ -52,7 +62,7 @@ const Item = ({ category, id }) => {
   return (
     <div className="item-container">
       <div className="item">
-        <ItemCarousel images={images} />
+        <ItemCarousel images={images} onImageClick={handleImageClick} />
       </div>
       <div className="rating-container">
         <p onClick={handleRate} style={{ cursor: 'pointer', color: 'black' }}>
@@ -73,16 +83,12 @@ const Item = ({ category, id }) => {
           </div>
         )}
       </div>
+      <ImageModal show={showModal} handleClose={handleClose} imageSrc={imageSrc} />
     </div>
   );
 };
 
 export default Item;
-
-
-
-
-
 
 
 
