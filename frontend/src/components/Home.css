@@ -250,7 +250,7 @@ button[type="submit"]:hover {
     display: flex;
     flex-wrap: wrap;
     justify-content: center; /* Center the container */
-    margin-top: 20px;
+    margin-top: 20px !important;
     align-items: center;
   }
 
@@ -267,7 +267,7 @@ button[type="submit"]:hover {
   }
 
   .nav-link:nth-child(5) {
-    width: 60%; /* Center the 5th button */
+    width: 50%; /* Center the 5th button */
     margin: 10px auto;
     order: 5;
   }
