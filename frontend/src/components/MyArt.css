@@ -135,7 +135,7 @@
   .my-art .item-container:first-child,
   .my-art .item-container:nth-child(2),
   .my-art .item-container:nth-child(3) {
-    margin-top: 20px; /* Adjust top margin for the first row */
+    margin-top: 160px; /* Adjust top margin for the first row */
   }
 
   .my-art .item img {
