@@ -123,7 +123,7 @@
 
   .my-art .item-container {
     width: 100%;
-    margin: 20px 0;
+    margin: 50px 0;
     padding: 0 10px;
     box-sizing: border-box;
     display: flex; /* Add flexbox */
@@ -135,7 +135,7 @@
   .my-art .item-container:first-child,
   .my-art .item-container:nth-child(2),
   .my-art .item-container:nth-child(3) {
-    margin-top: 160px; /* Adjust top margin for the first row */
+    margin-top: 50px; /* Adjust top margin for the first row */
   }
 
   .my-art .item img {
