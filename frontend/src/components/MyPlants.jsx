@@ -25,14 +25,14 @@ const MyPlants = () => {
         <Link to="/art" className="nav-link">
           Art
         </Link>
-        <Link to="/sculptures" className="nav-link">
-          Sculptures
+        <Link to="/plants" className="nav-link">
+          Plants
         </Link>
         <Link to="/jewelry" className="nav-link">
           Jewelry
         </Link>
-        <Link to="/plants" className="nav-link">
-          Plants
+        <Link to="/sculptures" className="nav-link">
+          Sculptures
         </Link>
       </div>
       <div className="items-container">
