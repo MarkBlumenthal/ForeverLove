@@ -75,9 +75,6 @@
 
 
 
-
-
-
 /* Responsive styling for 375px screen */
 @media only screen and (max-width: 375px) {
   .my-art {
@@ -129,6 +126,10 @@
     margin: 20px 0;
     padding: 0 10px;
     box-sizing: border-box;
+    display: flex; /* Add flexbox */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    text-align: center; /* Center align text inside items */
   }
 
   .my-art .item-container:first-child,
@@ -143,5 +144,10 @@
     width: 100%;
     box-sizing: border-box;
   }
-}
 
+  .my-art .description {
+    text-align: center; /* Center the text inside the description */
+    width: 90%; /* Ensure the description takes up most of the width */
+    margin: 10px auto; /* Center the description container */
+  }
+}
