@@ -150,4 +150,18 @@
     width: 90%; /* Ensure the description takes up most of the width */
     margin: 10px auto; /* Center the description container */
   }
+
+  .footer {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0; /* Add some top and bottom margin */
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .footer-content {
+    display: inline-block; /* Ensure the content is centered */
+    text-align: center;
+  }
 }
+
