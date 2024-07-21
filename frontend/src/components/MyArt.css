@@ -149,8 +149,11 @@
 
   .my-art .description {
     text-align: center; /* Center the text inside the description */
-    width: 90%; /* Ensure the description takes up most of the width */
+    width: 55%; /* Ensure the description takes up most of the width */
     margin: 10px auto; /* Center the description container */
+    font-size: 0.8rem;
+    margin-top: 30px;
+    word-wrap: break-word !important;
   }
 
   .footer {
