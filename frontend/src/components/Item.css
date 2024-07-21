@@ -76,8 +76,9 @@
     white-space: pre-wrap; /* Preserve whitespace and wrap text */
     text-align: justify; /* Justify text to align evenly on both sides */
     width: 40%; /* Ensure the description takes the full width of the container */
-    margin-left: 165px;
+    margin-left: 155px;
     color: black;
+    font-size: 0.8rem;
   }
   
   
