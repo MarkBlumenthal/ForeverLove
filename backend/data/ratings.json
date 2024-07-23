@@ -2,11 +2,11 @@
   "art": [
     {
       "id": 0,
-      "hearts": 42
+      "hearts": 43
     },
     {
       "id": 1,
-      "hearts": 23
+      "hearts": 24
     },
     {
       "id": 2,
@@ -52,7 +52,7 @@
     },
     {
       "id": 2,
-      "hearts": 0
+      "hearts": 1
     },
     {
       "id": 3,
@@ -136,7 +136,7 @@
     },
     {
       "id": 2,
-      "hearts": 1
+      "hearts": 7
     },
     {
       "id": 3,
