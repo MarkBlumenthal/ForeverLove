@@ -8,7 +8,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="header-container">
-        <h1>Aviv Blumenthal</h1>
+        <h1>Forever Love</h1>
       </div>
       <div className="description-container">
         <p>Step into my world</p>
@@ -31,7 +31,7 @@ const Home = () => {
         </Link>
       </div>
       <div className="about-section">
-        <img src="/Aviv.png" alt="Artist" className="artist-image" />
+        <img src="/profile.jpeg" alt="Artist" className="artist-image" />
         <div className="about-me">
           <h2>About Me</h2>
           <p>
@@ -60,10 +60,10 @@ const Home = () => {
         <h2>My Favourite Pieces</h2>
       </div>
       <div className="gallery">
-        <img src="/gallery image.jpg" alt="Gallery Image 1" className="gallery-image" />
-        <img src="/gallery image.jpg" alt="Gallery Image 2" className="gallery-image" />
-        <img src="/gallery image.jpg" alt="Gallery Image 3" className="gallery-image" />
-        <img src="/gallery image.jpg" alt="Gallery Image 4" className="gallery-image" />
+        <img src="/1_2.jpg" alt="Gallery Image 1" className="gallery-image" />
+        <img src="/2_1.jpg" alt="Gallery Image 2" className="gallery-image" />
+        <img src="/2_3.jpg" alt="Gallery Image 3" className="gallery-image" />
+        <img src="/3_1.jpg" alt="Gallery Image 4" className="gallery-image" />
       </div>
       <div className="contact-container">
         <div className="contact-paragraph">
