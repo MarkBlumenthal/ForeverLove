@@ -36,7 +36,7 @@ const MySculptures = () => {
         </Link>
       </div>
       <div className="items-container">
-        {Array.from({ length: 6 }, (_, i) => (
+        {Array.from({ length: 23 }, (_, i) => (
           <Item key={i} category="sculptures" id={i} description={descriptions[i]} />
         ))}
       </div>
