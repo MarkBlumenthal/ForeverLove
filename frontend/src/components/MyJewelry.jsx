@@ -36,7 +36,7 @@ const MyJewelry = () => {
         </Link>
       </div>
       <div className="items-container">
-        {Array.from({ length: 6 }, (_, i) => (
+        {Array.from({ length: 18 }, (_, i) => (
           <Item key={i} category="jewelry" id={i} description={descriptions[i]} />
         ))}
       </div>

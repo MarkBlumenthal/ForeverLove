@@ -1,10 +1,10 @@
-// frontend/src/components/Item.jsx
+// // frontend/src/components/Item.jsx
 // import React, { useState, useEffect } from 'react';
+// import axios from 'axios';
 // import ItemCarousel from './ItemCarousel';
 // import './Item.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faHeart, faChevronDown } from '@fortawesome/free-solid-svg-icons';
-// import axios from 'axios';
 // import ImageModal from './Modal';
 
 // const Item = ({ category, id, description }) => {
@@ -14,25 +14,35 @@
 //   const [showModal, setShowModal] = useState(false);
 //   const [imageSrc, setImageSrc] = useState('');
 
+//   const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3001';
+
 //   useEffect(() => {
-//     axios.get(`http://localhost:3001/ratings/${category}`)
+//     axios.get(`${backendUrl}/ratings/${category}`)
 //       .then(response => {
-//         const itemRating = response.data.find(item => item.id === id);
-//         if (itemRating) {
-//           setHearts(itemRating.hearts);
+//         console.log('Ratings response:', response.data); // Add logging to check response
+//         if (Array.isArray(response.data)) {
+//           const itemRating = response.data.find(item => item.id === id);
+//           if (itemRating) {
+//             setHearts(itemRating.hearts);
+//           }
+//         } else {
+//           console.error('Unexpected response format:', response.data);
 //         }
 //       })
 //       .catch(error => console.error('Error fetching ratings:', error));
-//   }, [category, id]);
+//   }, [category, id, backendUrl]);
 
 //   const handleRate = () => {
 //     setIsBouncing(true);
 //     setTimeout(() => setIsBouncing(false), 500);
 
-//     axios.post(`http://localhost:3001/rate/${category}/${id}`)
+//     axios.post(`${backendUrl}/rate/${category}/${id}`)
 //       .then(response => {
+//         console.log('Rate response:', response.data); // Add logging to check response
 //         if (response.data.success) {
 //           setHearts(response.data.hearts);
+//         } else {
+//           console.error('Rate response not successful:', response.data);
 //         }
 //       })
 //       .catch(error => console.error('Error updating rating:', error));
@@ -96,13 +106,9 @@
 
 
 
-
-
-
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import ItemCarousel from './ItemCarousel';
+// import ItemCarousel from './ItemCarousel'; // Commenting out the carousel import
 import './Item.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart, faChevronDown } from '@fortawesome/free-solid-svg-icons';
@@ -120,7 +126,7 @@ const Item = ({ category, id, description }) => {
   useEffect(() => {
     axios.get(`${backendUrl}/ratings/${category}`)
       .then(response => {
-        console.log('Ratings response:', response.data); // Add logging to check response
+        console.log('Ratings response:', response.data);
         if (Array.isArray(response.data)) {
           const itemRating = response.data.find(item => item.id === id);
           if (itemRating) {
@@ -139,7 +145,7 @@ const Item = ({ category, id, description }) => {
 
     axios.post(`${backendUrl}/rate/${category}/${id}`)
       .then(response => {
-        console.log('Rate response:', response.data); // Add logging to check response
+        console.log('Rate response:', response.data);
         if (response.data.success) {
           setHearts(response.data.hearts);
         } else {
@@ -154,9 +160,7 @@ const Item = ({ category, id, description }) => {
   };
 
   const images = [
-    `/images/${category}/${id}_1.jpg`,
-    `/images/${category}/${id}_2.jpg`,
-    `/images/${category}/${id}_3.jpg`,
+    `/images/${category}/${id}_1.jpg`, // Assuming there's only one image per item
   ];
 
   const handleImageClick = (src) => {
@@ -173,7 +177,14 @@ const Item = ({ category, id, description }) => {
   return (
     <div className="item-container">
       <div className="item">
-        <ItemCarousel images={images} onImageClick={handleImageClick} />
+        {/* Commenting out the carousel code */}
+        {/* <ItemCarousel images={images} onImageClick={handleImageClick} /> */}
+        <img 
+          src={images[0]} 
+          alt={`Image for ${category}`} 
+          onClick={() => handleImageClick(images[0])} 
+          style={{ cursor: 'pointer', width: '100%', borderRadius: '10px' }} 
+        />
       </div>
       <div className="rating-container">
         <p onClick={handleRate} style={{ cursor: 'pointer', color: 'black' }}>
@@ -200,6 +211,3 @@ const Item = ({ category, id, description }) => {
 };
 
 export default Item;
-
-
-
