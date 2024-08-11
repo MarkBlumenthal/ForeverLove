@@ -31,7 +31,7 @@ const Home = () => {
         </Link>
       </div>
       <div className="about-section">
-        <img src="/profile.jpeg" alt="Artist" className="artist-image" />
+        <img src="/Aviv.png" alt="Artist" className="artist-image" />
         <div className="about-me">
           <h2>About Me</h2>
           <p>
