@@ -15,8 +15,10 @@
   }
   
   .item img {
-    width: 45%;
-    height: auto;
+    /* width: 45%;
+    height: auto; */
+    width: 200px !important; /* Set your desired width */
+    height: 250px !important; /* Set your desired height */
     object-fit: cover; /* Ensures the image covers the box */
     border-radius: 10px; /* Optional: Add rounded corners to the images */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
